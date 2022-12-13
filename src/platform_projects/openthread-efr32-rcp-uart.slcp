@@ -12,6 +12,7 @@ component:
     instance:
       - vcom
   - id: rail_util_pti
+  - id: bootloader_interface
 
 configuration:
   - name: SL_BOARD_ENABLE_VCOM
@@ -21,4 +22,6 @@ define:
   - name: OPENTHREAD_COPROCESSOR
     value: 1
   - name: OPENTHREAD_RADIO
+    value: 1
+  - name: OPENTHREAD_CONFIG_NCP_REBOOT_BOOTLOADER_ENABLE
     value: 1
